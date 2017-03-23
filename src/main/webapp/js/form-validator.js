@@ -1,4 +1,4 @@
-var r = new RegExp("^[a-z A-Z-éèààâäêëûüùç]*$");
+var r = new RegExp("[^a-zA-ZÀ-ÿ- ]");
 
 var validate = function(formData) {
 	var isValid = false;

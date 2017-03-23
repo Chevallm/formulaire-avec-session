@@ -27,35 +27,26 @@
 	       					</p>
 	       				</div>
 	       				<div class="row">
-      						<div class="col m6 offset-m3 s12 center">
-      							<div class="input-field col s12">
-						          <input id="nom" type="text" class="validate" name="nom" required="" autofocus>
-						          <label for="nom">Nom</label>
-						        </div>
-						        <div class="input-field col s12">
-						          <input id="prenom" type="text" class="validate" name="prenom" required="">
-						          <label for="prenom">Prenom</label>
-						        </div>
-      						</div>
-      						<div class="row center">
-      							<div class="col s6 offset-s3">
-      								<button class="btn waves-effect waves-light" name="submit">Suivant
-								    	<i class="material-icons right">keyboard_arrow_right</i>
-								  </button>
-      							</div>
-      						</div>
+	       					<form action="secondForm" method="post">
+	      						<div class="col m6 offset-m3 s12 center">
+	      							<div class="input-field col s12">
+							          <input id="nom" type="text" class="validate" name="nom" required="" autofocus>
+							          <label for="nom">Nom</label>
+							        </div>
+							        <div class="input-field col s12">
+							          <input id="prenom" type="text" class="validate" name="prenom" required="">
+							          <label for="prenom">Prenom</label>
+							        </div>
+	      						</div>
+	      						<div class="row center">
+	      							<div class="col s6 offset-s3">
+	      								<button class="btn waves-effect waves-light" name="submit" type="submit">Suivant
+									    	<i class="material-icons right">keyboard_arrow_right</i>
+									  	</button>
+	      							</div>
+	      						</div>
+	      					</form>
 	       				</div>
-	       			</div>
-	       		</div>
-	       	</div>
-	       	<!--  Affichage du code barre lors du clique sur le bouton d'envoie du formaulaire -->
-	       	<div class="row">
-	       		<div class="card col s6 offset-s3 hide" id='card-image'>
-	       			<div class="card-content">
-	       				<span class="card-title">Votre code barre</span>
-	       				<p class="center" id="appendImg">
-	       					<img id="datamatrix" src=""/>
-	       				</p>
 	       			</div>
 	       		</div>
 	       	</div>
