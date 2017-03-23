@@ -22,6 +22,6 @@ public class FinalFormServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
         resp.setCharacterEncoding("utf-8");
-        req.getRequestDispatcher("finalForm.html").forward(req, resp);
+        req.getRequestDispatcher("finalForm.jsp").forward(req, resp);
     }
 }
