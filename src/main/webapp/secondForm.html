@@ -27,15 +27,11 @@
 	       					</p>
 	       				</div>
 	       				<div class="row">
-	       					<form action="secondForm" method="post">
+	       					<form action="finalForm" method="post">
 	      						<div class="col m6 offset-m3 s12 center">
 	      							<div class="input-field col s12">
-							          <input id="name" type="text" class="validate" name="name" required="" autofocus>
-							          <label for="name">Nom</label>
-							        </div>
-							        <div class="input-field col s12">
-							          <input id="first-name" type="text" class="validate" name="first-name" required="">
-							          <label for="first-name">Prenom</label>
+							          <input id="address" type="text" class="validate" name="address" required="" autofocus>
+							          <label for="address">Adresse postale</label>
 							        </div>
 	      						</div>
 	      						<div class="row center">
@@ -61,7 +57,7 @@
                 // Lors du clique sur le bouton d'envoie
                 $("button[name=submit]").click( function() {
 
-                    if(!validate([ $("input#first-name").val() , $("input#name").val() ])) {
+                    if(!validate( [ $("input#address").val() ], "adresse postale")) {
                         Materialize.toast(`
                                             <p>Il y a une erreur dans le formulaire. Veuillez verifier que :</p>
                                             <ul>
