@@ -1,10 +1,10 @@
-var r = new RegExp("^[a-zA-ZÀ-ÿ- ]*$");
+const r = new RegExp("^[a-zA-ZÀ-ÿ- ]*$");
 
-var validate = function(formData) {
+const validate = function(formData) {
 	var isValid = false;
 	for(var input in formData) {
 		
-		if( isEmpty(formData[input])){
+		if(isEmpty(formData[input])){
 			return false;
 		} else if(! r.test(formData[input])) {
 			return false;
@@ -13,10 +13,10 @@ var validate = function(formData) {
 		}
 	}
 	return isValid;
-}
+};
 
-var isEmpty = function(toCheck) {
+const isEmpty = function(toCheck) {
 	return (toCheck == "" || toCheck === "undefined")
-}
+};
 
 

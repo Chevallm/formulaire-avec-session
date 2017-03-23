@@ -27,23 +27,25 @@
 	       					</p>
 	       				</div>
 	       				<div class="row">
-      						<div class="col m6 offset-m3 s12 center">
-      							<div class="input-field col s12">
-						          <input id="nom" type="text" class="validate" name="nom" required="" autofocus>
-						          <label for="nom">Nom</label>
-						        </div>
-						        <div class="input-field col s12">
-						          <input id="prenom" type="text" class="validate" name="prenom" required="">
-						          <label for="prenom">Prenom</label>
-						        </div>
-      						</div>
-      						<div class="row center">
-      							<div class="col s6 offset-s3">
-      								<button class="btn waves-effect waves-light" name="submit">Suivant
-								    	<i class="material-icons right">keyboard_arrow_right</i>
-								  </button>
-      							</div>
-      						</div>
+	       					<form action="secondForm" method="post">
+	      						<div class="col m6 offset-m3 s12 center">
+	      							<div class="input-field col s12">
+							          <input id="name" type="text" class="validate" name="name" required="" autofocus>
+							          <label for="name">Nom</label>
+							        </div>
+							        <div class="input-field col s12">
+							          <input id="first-name" type="text" class="validate" name="first-name" required="">
+							          <label for="first-name">Prenom</label>
+							        </div>
+	      						</div>
+	      						<div class="row center">
+	      							<div class="col s6 offset-s3">
+	      								<button class="btn waves-effect waves-light" name="submit" type="submit">Suivant
+									    	<i class="material-icons right">keyboard_arrow_right</i>
+									  	</button>
+	      							</div>
+	      						</div>
+	      					</form>
 	       				</div>
 	       			</div>
 	       		</div>
@@ -55,23 +57,22 @@
 	    <script src="js/form-validator.js"></script>
 
 		<script>
-			$(document).ready( function () {
-				// Lors du clique sur le bouton d'envoie
-				$("button[name=submit]").click( function() {
+            $(document).ready( function () {
+                // Lors du clique sur le bouton d'envoie
+                $("button[name=submit]").click( function() {
 
-					if(!validate([ $("input#prenom").val() , $("input#nom").val() ])) {
-						Materialize.toast(`
-											<p>Il y a une erreur dans le formulaire. Veuillez verifier que :</p>
-											<ul>
-												<li>Les champs sont bien remplis</li>
-												<li>Qu'il n'y ai pas d'autre caractères que des lettres</li>
-											</ul>
+                    if(!validate([ $("input#prenom").val() , $("input#nom").val() ])) {
+                        Materialize.toast(`
+                                            <p>Il y a une erreur dans le formulaire. Veuillez verifier que :</p>
+                                            <ul>
+                                                <li>Les champs sont bien remplis</li>
+                                                <li>Qu'il n'y ai pas d'autre caractères que des lettres</li>
+                                            </ul>
 
-										  `,4000);
-					}
-				});
-			});
+                                          `,4000);
+                    }
+                });
+            });
 		</script>
-	
 	</body>
 </html>
