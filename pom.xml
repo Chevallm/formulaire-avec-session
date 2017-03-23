@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.epsi</groupId>
-	<!-- artifactId correspond au nom de votre application, 
+	<!-- artifactId correspond au nom de votre application,
 	n'hésitez pas à changer la valeur par défaut -->
 	<artifactId>webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -11,12 +11,12 @@
 	<!-- précisez le nom et l'email de chaque membre de votre groupe -->
 	<developers>
 		<developer>
-			<name>VOTRE_NOM</name>
-			<email>VOTRE_EMAIL</email>
+			<name>G. Fruhauf</name>
+			<email>gabriel.fruhauf@epsi.fr</email>
 		</developer>
 		<developer>
-			<name>VOTRE_NOM</name>
-			<email>VOTRE_EMAIL</email>
+			<name>M. Chevallier-Pichon</name>
+			<email>maxime.chevallier-pichon@epsi.fr</email>
 		</developer>
 	</developers>
 
@@ -57,7 +57,7 @@
 	<build>
 		<plugins>
 			<plugin>
-				<!-- le plugin pour démarrer TomEE depuis la ligne de commande avec maven : 
+				<!-- le plugin pour démarrer TomEE depuis la ligne de commande avec maven :
 				       mvn package tomee:run
 				-->
 				<groupId>org.apache.tomee.maven</groupId>
